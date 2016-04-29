@@ -31,6 +31,7 @@ public class FindPrimeNumber {
 			for(int j = 0;j<array.size();j++){
 				if(i%array.get(j)==0){
 					bool = false;	//说明被整除了
+					break;
 				}
 			}
 			
