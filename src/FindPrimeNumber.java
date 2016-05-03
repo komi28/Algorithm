@@ -26,6 +26,9 @@ public class FindPrimeNumber {
 		
 		for(int i = startNumber;i<endNumber;i++){
 			Boolean bool = true;
+			
+			if(i%2==0)continue;		//说明是偶数,直接跳出当前循环
+			
 			List<Integer> array = getNumber(i);
 			
 			for(int j = 0;j<array.size();j++){
