@@ -11,7 +11,7 @@ public class BinarySearch {
 		int arratLength = a.length-1;
 		
 		while(number<=arratLength){
-			//被查找的建要么不存在，要么必然存在玉a[number..arratLength]之中
+			//被查找的key要么不存在，要么必然存在于a[number..arratLength]之中
 			int mid = number + (arratLength-number) / 2;
 			if(key < a[mid]){
 				arratLength = mid - 1;
@@ -26,6 +26,7 @@ public class BinarySearch {
 	}
 	
 	public static void main(String[] args) {
+		//数组必须是升序的
 		int[] whilelist = {1,2,3,4,5,6,7,8,9,10};
 		int key = 1;
 		if(rank(key,whilelist)!=-1){
