@@ -9,7 +9,7 @@ public class Selection {
 	public static void sort(Object[] a){
 		//将a[]按升序排列
 		int N = a.length;
-		for(int i = 0;i<N;i++){
+		for(int i = 0;i < N;i++){
 			int min = i;
 			for(int j = i+1;j<N;j++){
 				//判断a[j]是否小于a[min],保证a[min]是a[i+1..N]的最小元素
