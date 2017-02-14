@@ -12,7 +12,7 @@ public class Insertion {
 		int N = a.length;
 		
 		for(int i = 1;i < N;i++){
-			//
+			//确保a[j-1]是最小的
 			for(int j = i;j > 0 && Example.less(a[j],a[j-1]); j--){
 				Example.exch(a, j, j-1);
 			}
